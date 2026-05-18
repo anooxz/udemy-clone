@@ -1,0 +1,632 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Gabarito", sans-serif;
+    width: 100%;
+}
+
+h1{
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*---Navbar---*/
+
+.navbar {
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 10;
+   flex-basis: 100%;
+    border-width: 100%;
+
+}
+
+
+/*---Navbar__Section1----*/
+
+.navbar__s1{
+    width: 20%;
+}
+
+.navbar__s1__title {
+    color: #9037D5;
+}
+
+
+/*---Navbar__Section2----*/
+
+.navbar__s2 {
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    border: black solid 1px;
+    width: 30%;
+    padding: 10px;
+    border-radius: 30px;
+    gap: 10px;
+}
+
+.navbar__s2 input {
+    border: none;
+    width: 100%;
+}
+
+.navbar__s2 input:focus {
+    outline: none;
+}
+
+
+/*---Navbar__Section3----*/
+
+.navbar__s3 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: 600;
+    cursor: pointer;
+    width: 20%;
+    justify-content: end;
+}
+
+.navbar__s4{
+    display: none ;
+}
+
+.navbar__s3 p{
+    font-weight: 400;
+}
+
+.navbar__s3 p:hover,i:hover{
+    transition: 0.2s ease;
+    color: #9217f0;
+}
+
+.navbar__s3__popup{
+    position: relative;
+}
+
+.navbar__s3__popup:hover .navbar__s3__popup__box{
+
+        display: block;
+        transition: 1s ease;
+}
+
+.navbar__s3__popup__box{
+    position: absolute;
+    border: solid 1px black;
+    background-color: white;
+    padding: 20px;
+    right: -20px;
+    border-radius: 3px;
+    top: 30px;
+    display: none;
+}
+
+/*---Categories---*/
+
+.categories{
+    display: flex;
+    padding: 10px 0px 10px 0px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    flex-basis: 100%;
+}
+
+.categories p{
+    background-color: #9037D5;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    border: 1px #9037D5 solid;
+    font-weight: 300;
+    margin-top: 4px;
+}
+
+.categories p:hover{
+    cursor: pointer;
+    transition: 0.2s ease;
+    color: #9037D5;
+    background-color: white;
+}
+
+/*---Sale image--*/
+
+.sale-image{
+    flex-basis: 100%;
+    position: relative;
+    height: 60vh;
+}
+
+.sale-image img{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.sale__offer__container{
+    border-radius: 10px;
+    left: 20px;
+    background-color: white;
+    color: black;
+    flex-basis: 20%;
+    padding: 20px;
+    position: absolute;
+    top: 40px;
+    animation: zoom 2s ease;
+    animation-iteration-count: 1;
+    margin-right: 20px;
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.sale__offer__container button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    margin-left: 25%;
+    border: none;
+    background-color: #9037D5;
+    color: white;
+    border-radius: 3px;
+}
+
+.sale__offer__container button:hover{
+    color: black;
+    cursor: pointer;
+}
+
+/*---Recommended---*/
+
+.recommended{
+    padding: 10px;
+    color: white;
+}
+
+.recommended__container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.course__card{
+    padding-top: 30px;
+    margin-top: 10px;
+    flex-basis: 17%;
+    gap: 10px;
+    flex-direction: column;
+    display: flex;
+    padding: 10px;
+    border-radius: 20px;
+    /* border: 2px solid black; */
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
+    height: fit-content;
+    color: black;
+}
+
+
+.course__card__btn{
+    display: flex;
+    justify-content: end;
+    position: relative;
+    bottom: -20px;
+
+}
+
+
+.course__card__btn button{
+    padding: 5px 8px 5px 8px;
+    border-radius: 20px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: #9a5ceb;
+    position: relative;
+    top: -42px;
+}
+
+
+.course__card img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px;
+}
+
+/*--blog---*/
+
+.blog{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.blog__title{
+    padding-left: 10px;
+}
+
+.blog__container{
+    background-color: rgb(41, 41, 96);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    color: white;
+}
+
+.blog__container h1{
+    padding-top: 5px;
+    padding-left: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+}
+
+.blog__container__features{
+    padding-top: 15px;
+}
+
+.blog__container__features p{
+    padding: 5px;
+}
+
+/*--Topics--*/
+
+.topics{
+    padding: 10px;
+}
+
+.topics__container{
+    display: flex;
+    gap: 2px;
+    flex-wrap: wrap;
+    margin-top: 3px;
+}
+
+.topics__container p{
+    padding: 10px;
+    border: 1px solid gray;
+    flex-grow: 1;
+    flex-basis: 27%;
+}
+
+/*--Popular Section----*/
+
+.popular{
+    padding: 10px;
+}
+
+.popular__container__top,.popular__container__bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    
+}
+
+.popular__container .course__card{
+    margin-top: 10px;
+}
+
+/* ---------------------------------------------------------------------- */
+
+.popular__container__middle{
+    margin: 50px 0px 50px 0px;
+    color: #6A6F73;
+    
+}
+
+.popular__container__middle__content{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.popular__container__middle .trainers{
+    margin-top: 20px;
+    border: 0.5px rgb(214, 214, 214) solid;
+    padding: 20px;
+    border-radius: 10px;
+    flex-basis: 20%;
+    height: 250px;
+    
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.popular__container__middle .trainers .trainers__top img{
+    width: 7%;
+    height: 7%;
+}
+
+.popular__container__middle .trainers .trainers__top p{
+    padding: 20px 0px 20px 0px ;
+}
+
+.popular__container__middle .trainers .trainers__bottom .trainers__profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
+
+.popular__container__middle .trainers .trainers__bottom{
+    display: flex;
+    padding: 10px 0px 10px 0px;
+    gap: 10px;
+    align-items: center;
+}
+
+/* ---------------------------------------------------------------------- */
+
+/*--certificate--*/
+
+#certificate{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.certificate{
+    height: 300px;
+    background-color: #202230;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-basis: 90%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    
+    
+}
+
+.certificate__details{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.certificate__card{
+    flex-basis: 15%;
+    height: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(72, 62, 143, 0.452);
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.8);
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    margin-left: 20px;
+    
+}
+
+.certificate__card img{
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    
+}
+
+/*--commit--*/
+
+.commit{
+    background-color: #F6F7F9;
+    margin: 50px 0px 50px 0px;
+    padding: 70px;
+    flex-basis: 100%;
+    
+}
+
+.commit__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6A6F73;
+    position: relative;
+    top: -30px;
+}
+
+.commit__image{
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+/*--career-section--*/
+
+
+#career-section h1{
+    padding: 10px;
+}
+
+.career-section__details{
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.career-section{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.career-section__card{
+    border: grey 1px solid;
+    padding: 10px;
+    flex-basis: 19%;
+    height: fit-content;
+    border-radius: 10px;
+    flex-grow: 1;
+}
+
+.career-section__card img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    height: 170px;
+}
+
+.career-section__overall{
+    display: flex;
+    gap: 2px;
+}
+
+.career-section__overall p{
+    border: 1px gray solid;
+    margin-top: 5px;
+    width: fit-content;
+    padding-top: 0px;
+    padding-left: 5px;
+    padding-bottom: 0px;
+    border-radius: 5px;
+    padding-right: 5px;
+}
+
+/*--footer--*/
+
+.footer{
+    margin-top: 40px;
+    background-color: black;
+    color: white;
+}
+
+.footer__one{
+    display: flex;
+    padding: 20px;
+    gap: 50px;
+    
+}
+
+.footer__one__s2{
+    padding-left: 20px;
+}
+
+.footer__one__s2 p,.footer__one__s1 p{
+    padding: 3px;
+}
+
+.footer__one p:hover{
+    color: #9037D5;
+    transition: 0.1s linear;
+    cursor: pointer;
+}
+
+.footer__two{
+    
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__two h1{
+    margin-left: 5px;
+}
+
+.footer__two p{
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
+/*=======================================================================================================================*/
+
+/* Css mediaqueries*/
+
+/* 
+------------------
+|---tablet view--|
+------------------ 
+*/
+
+@media screen and (max-width:1800px) {
+
+    .certificate__card img{
+        height: 150px;
+    }
+
+    .course__card{
+        flex-basis: 18%;
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width:1400px) {
+
+    .certificate__card img{
+        height: 100px;
+        
+    }
+
+}
+
+
+
+
+
+/* 
+------------------
+|---Mobile view--|
+------------------ 
+*/
+
+
+@media screen and (max-width:600px) {
+
+     .navbar__s3{
+        display: none;
+    }
+
+    .certificate {
+        flex-wrap: wrap;
+    }
+
+    .navbar__s4{
+        display: block;
+    }
+
+    .navbar__s2,.navbar__s3,.categories,.certificate__card,.commit__image{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width:400px) {
+
+
+   .certificate__card img{
+        flex-basis: 60px;
+        
+    }
+
+    .course__card{
+        justify-content: center;
+        flex-basis: 35%;
+    }
+}
